@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "LatoLight"; 
+  src: url("fonts/lato-light.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "LatoLight";
+  letter-spacing: 0.5px;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+@media (max-width: 510px) {
+  .container {
+    padding: 16px;
+  }
+}
+
+.about {
+  font-size: 18px;
+}
+
+.container_posts {
+  overflow-y: scroll;
+  height: 50vh;
+  max-width: 800px;
+  margin: 40px 30px;
+}
+
+@media (max-width: 604px) {
+  .container_posts {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 510px) {
+  .img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.wrap_post {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.post {
+  margin: 0 24px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text {
+  margin: 16px 0;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.date {
+  text-align: right;
+}
+
+.container_form p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.field_input {
+  margin-bottom: 20px;
+  margin-left: 57px;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.field_textarea {
+  padding: 6px;
+  border-radius: 4px;
+  height: 100px;
+  width: 400px;
+}
+
+@media (max-width: 604px) {
+  .field_textarea {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.button_save {
+  border: none;
+  border-radius: 4px;
+  background-color: #9abab8;
+  padding: 8px 24px;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .5s;
+  float: right;
+}
+
+.button_save:hover {
+  color: black;
+}

@@ -1,0 +1,29 @@
+<h1>Почему выбрали нас?</h1>
+<p class="about">Каждый день мы упорно работаем, чтобы сделать жизнь наших клиентов лучше и счастливее.</p>
+<div class="container_posts">
+  {{#each posts}}
+    <div class="wrap_post">
+      <img src="/quote.svg" class="img">
+      <div class="post">
+        <span class="name">{{this.name}}</span> 
+        <p class="text">{{this.text}}</p>
+        <div class="date">{{format this.date}}</div> 
+      </div>
+    </div>
+  {{/each}}
+</div>
+<div class="container_form">
+  <p>Добавьте свой отзыв о нас:</p>
+  <form method="POST">
+    <label>
+      Ваше имя: <input name="name" class="field_input">
+    </label><br>
+    <label>
+      Текст сообщения: <textarea name="text"class="field_textarea"></textarea>
+    </label><br>
+    <input type="submit" value="Сохранить" class="button_save">
+  </form>
+</div>
+
+
+
